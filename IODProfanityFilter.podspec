@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license = 'MIT'
   s.author = { "Island of Doom Software Inc." => "overlord@islandofdoom.com", "whuu" => "whuu@gazeta.pl" }
   s.source = { :git => "https://github.com/whuu/IODProfanityFilter.git", :branch => "develop" }
-  s.ios.deployment_target = '6.0'
+  s.ios.deployment_target = '5.0'
   s.osx.deployment_target = '10.8'
   s.source_files = 'IODProfanityFilter/Classes', 'IODProfanityFilter/Classes/**/*.{h,m}'
   s.resources = "IODProfanityFilter/Resources/*"
