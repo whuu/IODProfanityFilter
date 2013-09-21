@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name = "WHProfanityFilter"
+  s.name = "IODProfanityFilter"
   s.version = "1.0.0"
   s.summary = "Basic profanity filter library for iOS and Mac OS X apps. Based on https://github.com/IslandOfDoom/IODProfanityFilter."
   s.homepage = "https://github.com/whuu/IODProfanityFilter.git"
