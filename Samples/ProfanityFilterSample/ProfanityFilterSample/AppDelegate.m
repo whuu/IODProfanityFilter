@@ -7,12 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "IODProfanityFilter.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [IODProfanityFilter resetWordSetForAllLanguages:YES];
+    
     return YES;
 }
 							

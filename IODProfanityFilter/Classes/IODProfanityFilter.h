@@ -10,10 +10,20 @@
 
 /**
  The word set is initialized from the IODProfanityWords.txt in the app bundle, using the current locale.
- It is exposed as a mutable set so you can easily add/remove words at runtime if needed.
+ */
++ (NSSet*) wordSet;
+
+/**
+ Add words at runtime if needed.
  Note that changes to the word set are not persisted by this class between app launches.
  */
-+ (NSMutableSet*)wordSet;
++ (void) addWordsFromSet: (NSSet*) set;
+
+/**
+ Remove words at runtime if needed.
+ Note that changes to the word set are not persisted by this class between app launches.
+ */
++ (void) removeWordsFromSet: (NSSet*) set;
 
 /**
  Returns an array of NSValue(NSRange) indicating where offending words were found in the string.
@@ -35,7 +45,7 @@
 /**
  Reset offending word set to initial state. If allLanguages is YES, fill word set with offending words from all supported languages, if NO fill only with words from current locale.
  */
-+ (void) initWordSetForAllLanguages: (BOOL) allLanguages;
++ (void) resetWordSetForAllLanguages: (BOOL) allLanguages;
 
 
 @end
